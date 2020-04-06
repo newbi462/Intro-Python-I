@@ -31,10 +31,10 @@ import sys
 import calendar
 from datetime import datetime
 
-date_input = input("Enter a month: ")
+date_input = input("Enter a month exsample 4 for April, or press enter to skip: ")
 # print(date_input)
 
-# would be more simple to add input 2 to prevent errors... 
+# would be more simple to add input 2 to prevent errors...
 
 # https://www.geeksforgeeks.org/python-string-isnumeric-application/
 if date_input.isnumeric():
