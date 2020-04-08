@@ -35,8 +35,20 @@ print(y)
 
 x = input("Enter comma-separated numbers: ").split(',')
 
+#def is_even(*passed):
+#    for i in passed:
+#        hold = passed
+#        return hold[1]
+#  if int(passed) % 2 == 0:
+#      return passed
+hold = []
+for i in x:
+    if int(i) % 2 == 0:
+        #print(i)
+        hold.append(i)
+
 # What do you need between the square brackets to make it work?
-y = [*x]
+y = [*hold]
 # even as in "2" or as in [0]?
 
 print(y)
