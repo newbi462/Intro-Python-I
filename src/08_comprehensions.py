@@ -46,9 +46,20 @@ for i in x:
     if int(i) % 2 == 0:
         #print(i)
         hold.append(i)
+# more one line
+
+"""
+new_list = []
+for i in old_list:
+    if filter(i):
+        new_list.append(expressions(i))
+You can obtain the same thing using list comprehension:
+new_list = [expression(i) for i in old_list if filter(i)]
+"""
 
 # What do you need between the square brackets to make it work?
-y = [*hold]
+# y = [*hold]
+y = [i for i in x if int(i) % 2 == 0]
 # even as in "2" or as in [0]?
 
 print(y)
