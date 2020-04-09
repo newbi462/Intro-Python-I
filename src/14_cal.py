@@ -31,8 +31,14 @@ import sys
 import calendar
 from datetime import datetime
 
-date_input = input("Enter a month exsample 4 for April, or press enter to skip: ")
+# date_input = input("Enter a month exsample 4 for April, or press enter to skip: ")
 # print(date_input)
+#
+try:
+    date_input = sys.argv[1]
+except IndexError:
+    date_input = input("Enter a month exsample 4 for April, or press enter to skip: ")
+
 
 # would be more simple to add input 2 to prevent errors...
 
@@ -44,5 +50,7 @@ if date_input.isnumeric():
         date_input = datetime.today().month
 else:
     date_input = datetime.today().month
+
+#moduals for the formating
 
 print(calendar.Calendar().monthdatescalendar(2020, date_input))
